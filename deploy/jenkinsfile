@@ -17,7 +17,7 @@ pipeline {
         }
       }
     }
-    }
+    
 
     stage('Package') {
       steps {
@@ -26,7 +26,7 @@ pipeline {
         }
       }
     }
-    }
+    
 
     stage('Deploy') {
       steps {
@@ -35,7 +35,7 @@ pipeline {
         }
       }
     }
-    }
+    
 
      stage('Clean Up') {
       steps {
@@ -44,5 +44,5 @@ pipeline {
         }
       }
     }
-    }
+  }
 }
