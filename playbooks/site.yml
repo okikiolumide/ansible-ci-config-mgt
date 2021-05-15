@@ -1,6 +1,7 @@
+  
 ---
-  - hosts: all
-    name: Ping all instances
-    tasks:
-      
-      
+- hosts: all
+- import_playbook: ../static-assignments/common.yml
+
+- hosts: uat-webservers
+- import_playbook: ../static-assignments/uat-webservers.yml
